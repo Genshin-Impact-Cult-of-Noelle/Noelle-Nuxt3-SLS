@@ -1,55 +1,16 @@
-# Naive UI Nuxt Demo
+# 诺艾尔神教网站
 
-## Prequisite
+## 快速开始
 
-Make sure you have `naive-ui@>=2.29.0` installed.
-
-Personally I recommend you using pnpm to install deps.
-
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
-
-## Setup
-
-You can clone this repo.
-
-```bash
-git clone https://github.com/07akioni/naive-ui-nuxt-demo.git
-cd naive-ui-nuxt-demo
 ```
+npm i
+//yarn
 
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
 npm run dev
+//yarn dev
 ```
 
-## Production
+## 借物表
 
-Build the application for production:
+Nuxt3、NaiveUI
 
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.

@@ -1,0 +1,42 @@
+component: http
+name: http-nuxtjs-sTetDOrp-x
+inputs:
+  src:
+    dist: ./
+    hook: npm run build
+    exclude:
+      - .env
+  faas:
+    runtime: Nodejs16.14
+    framework: nuxtjs
+    name: '${name}'
+    environments: []
+    eip: false
+    timeout: 3
+    memorySize: 128
+    tags: []
+    layers:
+      - name: '${output:${stage}:${app}:noelle-nuxt3-layer.name}'
+        version: '${output:${stage}:${app}:noelle-nuxt3-layer.version}'
+  apigw:
+    protocols:
+      - http
+      - https
+    timeout: 60
+    environment: release
+    customDomains:
+      - domain: www.noelle.cool
+        certId: vKKlSBk4
+        protocols:
+          - http
+          - https
+        pathMap:
+          - path: /
+            environment: release
+        customMap: true
+        isDefaultMapping: false
+  region: ap-guangzhou
+  isAutoCiDeploy: false
+org: '1257818307'
+app: noelle-nuxt3
+stage: prod

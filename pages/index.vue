@@ -15,24 +15,10 @@
       :show-dots="false"
       @update:currentIndex="onCurrentPageChange"
     >
+
       <HomePageFirst :isShow="curPageIndex == 0"> </HomePageFirst>
-      <HomePageSecond :isShow="curPageIndex == 0"> </HomePageSecond>
-
-      <!-- <div class="carousel-img head-1" :class="{ now: curPageIndex == 0 }">
-        <img class="bg" src="@/assets/image/test/t.jpg" alt="" srcset="" />
-        <div class="content">
-          <div class="box">
-            <div class="title">BARBARA CHURCH</div>
-            <div class="text">艾伯特拯救世界</div>
-            <div class="button">Get Started</div>
-          </div>
-        </div>
-      </div> -->
-
-      <div class="carousel-img head-1" :class="{ now: curPageIndex == 2 }">
-        <img class="bg" src="@/assets/image/test/t.jpg" alt="" srcset="" />
-      </div>
-      <!-- <div v-for="(i, v) in [5, 4, 3, 2, 1]" class="carousel-img">      </div> -->
+      <HomePageSecond :isShow="curPageIndex == 1"> </HomePageSecond>
+      <HomePageThird :isShow="curPageIndex == 2"></HomePageThird>
     </NCarousel>
   </NSpace>
 </template>

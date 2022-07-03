@@ -1,5 +1,25 @@
+@c1: #145da8;
+@c2: #4ad5ef;
 *{
     padding: 0;
     border: 0;
     margin: 0;
+    box-sizing: border-box;
+    color:inherit;
+}
+.buling-text{
+    color:transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(-135deg,  @c2, @c1, @c2, @c2, @c1, @c2);
+    animation: loop-color 3s infinite linear;
+    background-size: 200% 100%;
+    @keyframes loop-color {
+        0%{
+            background-position: 100% -100%;
+        }
+        100%{
+            background-position: -100% 0;
+
+        }
+    }
 }

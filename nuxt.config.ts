@@ -1,7 +1,7 @@
 /*
  * @Date: 2022-07-01 13:15:06
  * @LastEditors: YueAo7
- * @LastEditTime: 2022-07-04 21:13:40
+ * @LastEditTime: 2022-07-04 23:00:22
  * @FilePath: \Noelle-Nuxt3-SLS\nuxt.config.ts
  */
 import { defineNuxtConfig } from "nuxt";
@@ -21,6 +21,7 @@ export default defineNuxtConfig({
       "@css-render/vue3-ssr",
       "@juggle/resize-observer",
     ],
+    
   },
   css: [
     "@/assets/css/public/index.less"

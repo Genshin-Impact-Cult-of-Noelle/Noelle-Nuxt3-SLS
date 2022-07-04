@@ -1,8 +1,8 @@
 <!--
  * @Date: 2022-07-03 18:53:28
  * @LastEditors: YueAo7
- * @LastEditTime: 2022-07-03 21:35:00
- * @FilePath: \Noelle-Nuxt3-SLS\components\HomePage\Second.vue
+ * @LastEditTime: 2022-07-04 10:54:11
+ * @FilePath: \Noelle-Nuxt3-SLS\components\HomePage\Third.vue
 -->
 <template>
   <div class="main">
@@ -61,6 +61,7 @@ const tabData = {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 640px;
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 1);

@@ -1,11 +1,11 @@
 <!--
  * @Date: 2022-07-03 18:53:26
  * @LastEditors: YueAo7
- * @LastEditTime: 2022-07-03 19:58:23
+ * @LastEditTime: 2022-07-04 10:56:25
  * @FilePath: \Noelle-Nuxt3-SLS\components\HomePage\First.vue
 -->
 <template>
-  <div class="main" :class="{now:isShow}">
+  <div class="main" :class="{ now: isShow }">
     <img class="bg" src="@/assets/image/test/t.jpg" alt="" srcset="" />
     <div class="content">
       <div class="box">
@@ -19,13 +19,16 @@
 <script lang="ts" setup>
 import { NSpace } from "naive-ui";
 const props = defineProps({
-    isShow:Boolean
-})
+  isShow: Boolean,
+});
 </script>
 
 <style lang="less" scoped>
 @import "@/assets/css/public/index.less";
 .main {
+  min-width: 1280px;
+  min-height: 720px;
+  cursor: default;
   .bg {
     z-index: 0;
     position: absolute;
@@ -60,7 +63,7 @@ const props = defineProps({
         transition: all 0.8s cubic-bezier(0.17, 0.84, 0.44, 1);
       }
       .title {
-          padding:  0 20px 0 20px;
+        padding: 0 20px 0 20px;
         top: -300px;
         font-size: 80px;
         text-transform: uppercase;

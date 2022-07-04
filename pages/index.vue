@@ -1,11 +1,11 @@
 <!--
  * @Date: 2022-07-01 13:15:06
  * @LastEditors: YueAo7
- * @LastEditTime: 2022-07-03 21:36:45
+ * @LastEditTime: 2022-07-04 10:47:16
  * @FilePath: \Noelle-Nuxt3-SLS\pages\index.vue
 -->
 <template>
-  <NSpace>
+  <NSpace class="app">
     <NCarousel
       direction="vertical"
       style="width: 100vw; height: 100vh"
@@ -40,9 +40,10 @@ useHead({
 <style lang="less" scoped>
 @import "@/assets/css/public/index.less";
 
-.carousel-img {
-  width: 100vw;
-  height: 100vh;
+
+.app{
+  min-width: 1280px;
+  min-height: 720px;
 }
 
 </style>

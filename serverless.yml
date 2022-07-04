@@ -1,7 +1,7 @@
 component: http
 name: noelle-nuxt3-sls
 org: '1257818307'
-app: noelle-web-prod
+app: noelle-nuxt3-prod
 stage: prod
 inputs:
   region: ap-chengdu

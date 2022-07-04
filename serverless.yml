@@ -1,46 +1,33 @@
 component: http
-name: http-nuxtjs-ByY8tWtJox
+name: noelle-nuxt3-sls
 org: '1257818307'
 app: noelle-web-prod
 stage: prod
 inputs:
-  region: ap-guangzhou
+  region: ap-chengdu
   src:
     dist: ./
     hook: npm run build
     exclude:
       - .env
   faas:
-    runtime: Nodejs12.16
+    runtime: Nodejs16.13
     eip: false
     timeout: 3
     memorySize: 128
     tags: []
     framework: nuxtjs
     environments: []
-    bootstrap:
-      cmd: >-
-        %23!%2Fvar%2Flang%2Fnode12%2Fbin%2Fnode%0Arequire(%22%40nuxt%2Fcli%22)%0A%20%20.run(%5B%22start%22%2C%20%22--port%22%2C%20%229000%22%2C%20%22--hostname%22%2C%20%220.0.0.0%22%5D)%0A%20%20.catch((error)%20%3D%3E%20%7B%0A%20%20%20%20require(%22consola%22).fatal(error)%3B%0A%20%20%20%20require(%22exit%22)(2)%3B%0A%20%20%7D)%3B
     layers:
-      - name: noelle-web-prod-layer
-        version: 7
+      - name: noelle-sls-layer
+        version: 1
   apigw:
     timeout: 60
     protocols:
       - http
       - https
     environment: release
-    customDomains:
-      - domain: www.noelle.cool
-        certId: vKKlSBk4
-        protocols:
-          - https
-        pathMap:
-          - path: /
-            environment: release
-        customMap: true
-        isDefaultMapping: false
   isAutoCiDeploy: true
   codePlatform: GITHUB
-  gitUrl: 'https://github.com/Genshin-Impact-Cult-of-Noelle/Noelle-Nuxt-ServerLess.git'
+  gitUrl: 'https://github.com/Genshin-Impact-Cult-of-Noelle/Noelle-Nuxt3-SLS.git'
   branch: main

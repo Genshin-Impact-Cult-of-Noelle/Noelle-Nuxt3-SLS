@@ -20,7 +20,7 @@ inputs:
     environments: []
     layers:
       - name: noelle-sls-layer
-        version: 3
+        version: 1
   apigw:
     timeout: 60
     protocols:

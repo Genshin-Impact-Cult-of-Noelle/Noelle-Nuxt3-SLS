@@ -1,7 +1,7 @@
 <!--
  * @Date: 2022-07-03 18:53:28
  * @LastEditors: YueAo7
- * @LastEditTime: 2022-07-04 10:54:11
+ * @LastEditTime: 2022-07-04 16:17:53
  * @FilePath: \Noelle-Nuxt3-SLS\components\HomePage\Third.vue
 -->
 <template>
@@ -44,12 +44,15 @@ const tabData = {
   display: flex;
   position: absolute;
   padding-right: 1px;
-  background-color: @c1;
+  // background-color: @c1;
   top: 0;
   right: 0;
   transform: translateY(-200%);
   >*{
-    margin-left:1px ;
+    border-right: solid 1px @c1;
+  }
+  >:first-child{
+    border-left: solid 1px @c1;
   }
 }
 
@@ -64,7 +67,6 @@ const tabData = {
   min-width: 640px;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 1);
 
   .box {
     display: flex;

@@ -1,7 +1,7 @@
 <!--
  * @Date: 2022-07-04 10:03:36
  * @LastEditors: YueAo7
- * @LastEditTime: 2022-07-04 10:56:38
+ * @LastEditTime: 2022-07-04 16:15:49
  * @FilePath: \Noelle-Nuxt3-SLS\components\Part\SelectButtom.vue
 -->
 <template>
@@ -45,7 +45,7 @@ const props = defineProps({
     }
 
     .light {
-      background-color: #ffffff;
+      background-color: #ffffff00;
 
       color: @c1;
     }

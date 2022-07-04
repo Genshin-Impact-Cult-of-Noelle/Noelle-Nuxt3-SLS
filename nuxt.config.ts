@@ -1,7 +1,7 @@
 /*
  * @Date: 2022-07-01 13:15:06
  * @LastEditors: YueAo7
- * @LastEditTime: 2022-07-03 16:24:42
+ * @LastEditTime: 2022-07-04 21:13:40
  * @FilePath: \Noelle-Nuxt3-SLS\nuxt.config.ts
  */
 import { defineNuxtConfig } from "nuxt";
@@ -9,7 +9,7 @@ const isProd = process.env.NODE_ENV === "production";
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   app: {
-    buildAssetsDir: "/love/"
+    buildAssetsDir: "/love/",
   },
   alias: {
   },

@@ -1,12 +1,12 @@
 <!--
  * @Date: 2022-07-03 18:53:26
  * @LastEditors: YueAo7
- * @LastEditTime: 2022-07-04 10:56:25
+ * @LastEditTime: 2022-07-06 16:43:43
  * @FilePath: \Noelle-Nuxt3-SLS\components\HomePage\First.vue
 -->
 <template>
   <div class="main" :class="{ now: isShow }">
-    <img class="bg" src="@/assets/image/test/t.jpg" alt="" srcset="" />
+    <img class="bg" src="/image/test/t.jpg" alt="" srcset="" />
     <div class="content">
       <div class="box">
         <div class="title buling-text">BARBARA CHURCH</div>

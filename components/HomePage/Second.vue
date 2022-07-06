@@ -1,7 +1,7 @@
 <!--
  * @Date: 2022-07-03 18:53:28
  * @LastEditors: YueAo7
- * @LastEditTime: 2022-07-04 17:41:25
+ * @LastEditTime: 2022-07-06 18:58:27
  * @FilePath: \Noelle-Nuxt3-SLS\components\HomePage\Second.vue
 -->
 <template>
@@ -90,7 +90,7 @@ const props = defineProps({
 const changeTab = (v: number) => {
   tabIndex.value = v;
 };
-const nuxtApp = useNuxtApp();
+const nuxt = useNuxtApp();
 const onCurrentPageChange = (curIndex: number, lastIndex: number) => {
   tabIndex.value = curIndex;
 };

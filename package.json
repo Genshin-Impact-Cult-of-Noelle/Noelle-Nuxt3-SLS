@@ -1,11 +1,11 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "build": "nuxi build",
+    "dev": "nuxi dev",
+    "start": "nuxi start",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview"
   },
   "devDependencies": {
     "@css-render/vue3-ssr": "^0.15.10",
@@ -17,3 +17,4 @@
     "@vicons/ionicons5": "^0.12.0"
   }
 }
+

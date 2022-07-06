@@ -1,7 +1,7 @@
 <!--
  * @Date: 2022-07-01 13:15:06
  * @LastEditors: YueAo7
- * @LastEditTime: 2022-07-04 18:55:51
+ * @LastEditTime: 2022-07-06 15:02:24
  * @FilePath: \Noelle-Nuxt3-SLS\pages\index.vue
 -->
 <template>
@@ -34,6 +34,8 @@
 import { NSpace, NCarousel, NButton, NTabs, NTabPane ,NIcon} from "naive-ui";
 import {ArrowDown} from "@vicons/ionicons5"
 const curPageIndex = ref(0);
+const nuxt = useNuxtApp();
+
 const onCurrentPageChange = (curIndex: number, lastIndex: number) => {
   curPageIndex.value = curIndex;
 };
